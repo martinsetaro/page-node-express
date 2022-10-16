@@ -1,0 +1,36 @@
+extends ./layout/index
+block content
+
+ div(class="w-full text-center m-auto principal bg-white p-36")
+  h1(class="text-6xl mt-6") Servicios
+  p(class="text-2xl mt-7") Nos dedicamos a mejorar y mantener la belleza del rostro y tus uñas, ofreciendo servicios de medicina estética de excelencia en combinación con productos de alta calidad. Nos respalda un equipo humano altamente capacitado, con un alto sentido de compromiso y servicio.
+  div(class="w-full h-auto p-2 mt-10 mb-10 flex flex-wrap justify-around")
+    div(class="w-96 h-96 mb-6 shadow-xl rounded-md hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2016/06/21/15/51/cosmetology-1471345_960_720.jpg", alt="img")
+    div(class="w-96 h-96 shadow-xl  hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2018/01/05/22/00/nail-3063956_960_720.jpg", alt="img")
+    div(class="w-96 h-96 shadow-xl  hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2017/09/25/11/33/lacquer-2784803_960_720.jpg", alt="img")
+    div(class="w-96 h-96 shadow-xl  hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2018/03/19/12/03/color-3239832_960_720.jpg", alt="img")
+    div(class="w-96 h-96 shadow-xl  hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2018/03/14/08/55/manicure-3224637_960_720.jpg", alt="img")
+    div(class="w-96 h-96 shadow-xl  hover:scale-110 duration-300")
+     img(class="w-full h-full rounded-md" src="https://cdn.pixabay.com/photo/2015/05/10/08/59/nail-polish-760673_960_720.jpg", alt="img")
+ div(class="bg-transparent w-full h-40r pt-32")
+  h2.text-9xl.text-white.text-center Vení !!! 
+  h3.text-8xl.text-white.text-center Renovate con tu mejor version...
+ div(class="bg-red-400 w-full h-30r flex flex-wrap justify-around")
+  div(class="w-1/2 h-96 p-5 text-center")
+   h2.text-6xl.text-white Hola contanos!
+   p.text-3xl.text-white.mt-6 Contactate con nosotros y contanos que experiencia tuvistes en nuestros locales o que te gustaria conocer.
+
+  div(class="w-1/2 h-96")
+   form(action="post" class="w-1/2 m-auto p-2 h-auto flex flex-col mt-10")
+    label(class="text-2xl text-white" for="nombre") Nombre 
+    input(class="w-full h-10 rounded shadow-md mb-5 pl-2" type="text", placeholder="Ingresa tu nombre", name="nombre") 
+    label(class="text-2xl text-white" for="email") Email 
+    input(class="w-full h-10 rounded shadow-md mb-5 pl-2" type="email", placeholder="Ingresa tu email", name="email")
+    label(class="text-2xl text-white" for="comentario") Comentarios 
+    input(class="w-full h-10 rounded shadow-md mb-5 pl-2" type="text", placeholder="Ingresa tu comentario", name="comentario") 
+    input(class="bg-orange-600 h-10 cursor-pointer text-white uppercase font-bold rounded shadow-md" type="submit", value="Enviar")
